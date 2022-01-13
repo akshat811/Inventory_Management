@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Inventory_Management.ShowScene">
+   <effect>
+      <InnerShadow choke="0.47" height="64.0" offsetX="1.0" offsetY="2.5" radius="31.127499999999998" width="62.51">
+         <color>
+            <Color red="0.8199999928474426" green="0.0737999975681305" blue="0.7688165903091431" />
+         </color>
+      </InnerShadow>
+   </effect>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="35.0" prefWidth="165.0" text="SHOW PRODUCT" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16584429144859314" green="0.7236841917037964" blue="0.10386208444833755" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.008406432345509529" green="0.08686646819114685" blue="0.30263158679008484" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TableView fx:id="tableView" layoutX="-1.0" layoutY="67.0" prefHeight="333.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="38.0" text="ID " />
+          <TableColumn fx:id="Name" prefWidth="91.0" text="Name " />
+            <TableColumn fx:id="Price" prefWidth="66.0" text="Price" />
+            <TableColumn fx:id="Quantity" prefWidth="83.0" text="Quantity" />
+            <TableColumn fx:id="MFD" prefWidth="94.0" text="MFD" />
+            <TableColumn fx:id="Expiry" prefWidth="87.0" text="Expiry" />
+            <TableColumn fx:id="EDIT" prefWidth="63.0" text="EDIT " />
+            <TableColumn fx:id="DELETE" prefWidth="77.0" text="DELETE" />
+        </columns>
+         <effect>
+            <InnerShadow choke="0.24" height="95.13" radius="70.785" width="190.01">
+               <color>
+                  <Color red="0.11391325294971466" green="0.7236841917037964" blue="0.6728699803352356" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TableView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="17.0" prefWidth="59.0" text="BACK">
+         <font>
+            <Font name="Mongolian Baiti" size="14.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+   </children>
+</Pane>

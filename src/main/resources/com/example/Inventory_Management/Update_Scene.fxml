@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Inventory_Management.UpdateScene">
+   <effect>
+      <InnerShadow blurType="TWO_PASS_BOX" choke="0.84" height="58.07" radius="28.905" width="59.55">
+         <color>
+            <Color red="0.23148147761821747" green="0.5797189474105835" blue="0.6578947305679321" opacity="0.800000011920929" />
+         </color>
+         <input>
+            <Glow />
+         </input>
+      </InnerShadow>
+   </effect>
+   <children>
+      <Button alignment="CENTER" layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="62.0" text="BACK" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5263158082962036" green="0.24853801727294922" blue="0.24853801727294922" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="21.0" prefHeight="31.0" prefWidth="157.0" text="UPDATE DETAILS " textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3815789520740509" green="0.37521928548812866" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5249999761581421" blue="0.5526315569877625" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <TextField fx:id="Name" layoutX="395.0" layoutY="84.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="97.0" layoutY="81.0" prefHeight="31.0" prefWidth="157.0" text="Update Product Name ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="114.0" prefHeight="31.0" prefWidth="157.0" text="Update Product Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="152.0" prefHeight="31.0" prefWidth="157.0" text="Update Product Quantity">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="185.0" prefHeight="30.0" prefWidth="157.0" text="Update MFD Date ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Price" layoutX="393.0" layoutY="117.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="Quantity" layoutX="393.0" layoutY="154.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="97.0" layoutY="215.0" prefHeight="30.0" prefWidth="157.0" text="Update Expiry Date ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="265.0" mnemonicParsing="false" onAction="#UpdateDetails" text="UPDATE" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.028265107423067093" green="0.3815789520740509" blue="0.14014782011508942" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1087719276547432" blue="0.40789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <InnerShadow choke="0.63" height="12.1" radius="18.1525" width="62.51">
+               <color>
+                  <Color red="0.8815789222717285" green="0.7550560235977173" blue="0.7550560235977173" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="322.0" prefHeight="31.0" prefWidth="465.0" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.15714285714285714" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18274854123592377" green="0.06822612136602402" blue="0.5263158082962036" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <DatePicker fx:id="mfd" layoutX="387.0" layoutY="188.0" />
+      <DatePicker fx:id="Expiry" layoutX="387.0" layoutY="218.0" />
+      <Label fx:id="msg" alignment="CENTER" contentDisplay="CENTER" layoutX="74.0" layoutY="315.0" prefHeight="31.0" prefWidth="465.0" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.19298245012760162" blue="0.19298245012760162" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04248903691768646" green="0.027412280440330505" blue="0.32894736528396606" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+   </children>
+</Pane>
